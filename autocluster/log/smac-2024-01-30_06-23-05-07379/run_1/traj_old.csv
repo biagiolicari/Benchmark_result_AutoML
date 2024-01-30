@@ -1,0 +1,9 @@
+"CPU Time Used","Estimated Training Performance","Wallclock Time","Incumbent ID","Automatic Configurator (CPU) Time","Configuration..."
+0.000000, 2147483648.000000, 0.000200, 1, 0.000200, clustering_choice=''KMeans'', n_clusters___KMeans='5'
+180.105487, 2147483647.000000, 180.124646, 1, 0.019159, clustering_choice=''KMeans'', n_clusters___KMeans='5'
+540.977743, 0.536137, 541.457114, 2, 0.479371, clustering_choice=''SpectralClustering'', affinity___SpectralClustering=''laplacian'', assign_labels___SpectralClustering=''discretize'', eigen_solver___SpectralClustering=''arpack'', n_clusters___SpectralClustering='75'
+1083.030595, 0.499717, 1084.574489, 3, 1.543895, clustering_choice=''SpectralClustering'', affinity___SpectralClustering=''nearest_neighbors'', assign_labels___SpectralClustering=''discretize'', eigen_solver___SpectralClustering=''arpack'', n_clusters___SpectralClustering='23'
+1084.470124, 0.488751, 1086.785970, 4, 2.315846, clustering_choice=''GaussianMixture'', covariance_type___GaussianMixture=''diag'', init_params___GaussianMixture=''random'', n_components___GaussianMixture='28', warm_start___GaussianMixture='False'
+1085.234731, 0.472306, 1087.855110, 5, 2.620379, clustering_choice=''MeanShift'', bandwidth___MeanShift='4.2328432509297444', bin_seeding___MeanShift='False'
+1447.234347, 0.463046, 1450.821552, 6, 3.587205, clustering_choice=''SpectralClustering'', affinity___SpectralClustering=''nearest_neighbors'', assign_labels___SpectralClustering=''discretize'', eigen_solver___SpectralClustering=''arpack'', n_clusters___SpectralClustering='18'
+2169.815772, 0.400481, 2174.554332, 7, 4.738560, clustering_choice=''SpectralClustering'', affinity___SpectralClustering=''nearest_neighbors'', assign_labels___SpectralClustering=''discretize'', eigen_solver___SpectralClustering=''arpack'', n_clusters___SpectralClustering='7'

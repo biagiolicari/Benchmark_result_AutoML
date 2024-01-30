@@ -1,0 +1,5 @@
+"CPU Time Used","Estimated Training Performance","Wallclock Time","Incumbent ID","Automatic Configurator (CPU) Time","Configuration..."
+0.000000, 2147483648.000000, 0.000308, 1, 0.000308, clustering_choice=''KMeans'', n_clusters___KMeans='5'
+180.068491, 2147483647.000000, 180.086543, 1, 0.018051, clustering_choice=''KMeans'', n_clusters___KMeans='5'
+360.399776, 0.245764, 360.860074, 2, 0.460298, clustering_choice=''DBSCAN'', eps___DBSCAN='2.1256564043381108', min_samples___DBSCAN='26'
+3063.039572, 0.137918, 3067.130698, 3, 4.091126, clustering_choice=''DBSCAN'', eps___DBSCAN='1.3427640856650684', min_samples___DBSCAN='9'

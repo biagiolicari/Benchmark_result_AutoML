@@ -1,0 +1,8 @@
+"CPU Time Used","Estimated Training Performance","Wallclock Time","Incumbent ID","Automatic Configurator (CPU) Time","Configuration..."
+0.000000, 2147483648.000000, 0.000196, 1, 0.000196, clustering_choice=''KMeans'', n_clusters___KMeans='5'
+180.107381, 2147483647.000000, 180.127960, 1, 0.020579, clustering_choice=''KMeans'', n_clusters___KMeans='5'
+540.759511, 0.422588, 541.523112, 2, 0.763601, clustering_choice=''AgglomerativeClustering'', affinity___AgglomerativeClustering=''l2'', linkage___AgglomerativeClustering=''complete'', n_clusters___AgglomerativeClustering='6'
+1442.066164, 0.414570, 1444.350895, 3, 2.284731, clustering_choice=''AgglomerativeClustering'', affinity___AgglomerativeClustering=''manhattan'', linkage___AgglomerativeClustering=''average'', n_clusters___AgglomerativeClustering='8'
+1442.144560, 0.402978, 1444.465654, 4, 2.321095, clustering_choice=''AgglomerativeClustering'', affinity___AgglomerativeClustering=''euclidean'', linkage___AgglomerativeClustering=''ward'', n_clusters___AgglomerativeClustering='3'
+1802.487120, 0.400607, 1805.319252, 5, 2.832131, clustering_choice=''AgglomerativeClustering'', affinity___AgglomerativeClustering=''l2'', linkage___AgglomerativeClustering=''complete'', n_clusters___AgglomerativeClustering='3'
+1982.790104, 0.366016, 1986.075147, 6, 3.285043, clustering_choice=''AgglomerativeClustering'', affinity___AgglomerativeClustering=''l2'', linkage___AgglomerativeClustering=''complete'', n_clusters___AgglomerativeClustering='2'

@@ -1,0 +1,10 @@
+"CPU Time Used","Estimated Training Performance","Wallclock Time","Incumbent ID","Automatic Configurator (CPU) Time","Configuration..."
+0.000000, 2147483648.000000, 0.000110, 1, 0.000110, clustering_choice=''KMeans'', n_clusters___KMeans='5'
+180.105908, 2147483647.000000, 180.122253, 1, 0.016345, clustering_choice=''KMeans'', n_clusters___KMeans='5'
+180.602080, 0.548307, 181.054080, 2, 0.452000, clustering_choice=''SpectralClustering'', affinity___SpectralClustering=''laplacian'', assign_labels___SpectralClustering=''discretize'', eigen_solver___SpectralClustering=''arpack'', n_clusters___SpectralClustering='75'
+361.048450, 0.373149, 361.924881, 3, 0.876431, clustering_choice=''SpectralClustering'', affinity___SpectralClustering=''rbf'', assign_labels___SpectralClustering=''discretize'', eigen_solver___SpectralClustering=''arpack'', n_clusters___SpectralClustering='19'
+364.138018, 0.346182, 366.837206, 4, 2.699187, clustering_choice=''SpectralClustering'', affinity___SpectralClustering=''laplacian'', assign_labels___SpectralClustering=''discretize'', eigen_solver___SpectralClustering=''arpack'', n_clusters___SpectralClustering='13'
+364.154752, 0.334341, 366.868556, 5, 2.713805, clustering_choice=''AgglomerativeClustering'', affinity___AgglomerativeClustering=''l1'', linkage___AgglomerativeClustering=''complete'', n_clusters___AgglomerativeClustering='7'
+544.303157, 0.331704, 547.173776, 6, 2.870619, clustering_choice=''Birch'', branching_factor___Birch='869', n_clusters___Birch='8'
+725.335489, 0.322454, 728.837021, 7, 3.501532, clustering_choice=''SpectralClustering'', affinity___SpectralClustering=''rbf'', assign_labels___SpectralClustering=''discretize'', eigen_solver___SpectralClustering=''arpack'', n_clusters___SpectralClustering='9'
+1627.775465, 0.312331, 1633.049816, 8, 5.274351, clustering_choice=''Birch'', branching_factor___Birch='80', n_clusters___Birch='11'

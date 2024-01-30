@@ -1,0 +1,9 @@
+"CPU Time Used","Estimated Training Performance","Wallclock Time","Incumbent ID","Automatic Configurator (CPU) Time","Configuration..."
+0.000000, 2147483648.000000, 0.000219, 1, 0.000219, clustering_choice=''KMeans'', n_clusters___KMeans='5'
+180.107808, 2147483647.000000, 180.124760, 1, 0.016952, clustering_choice=''KMeans'', n_clusters___KMeans='5'
+363.932448, 0.521534, 364.770340, 2, 0.837892, clustering_choice=''GaussianMixture'', covariance_type___GaussianMixture=''tied'', init_params___GaussianMixture=''random'', n_components___GaussianMixture='18', warm_start___GaussianMixture='True'
+364.237072, 0.428293, 365.094670, 3, 0.857598, clustering_choice=''AgglomerativeClustering'', affinity___AgglomerativeClustering=''l2'', linkage___AgglomerativeClustering=''complete'', n_clusters___AgglomerativeClustering='6'
+364.400487, 0.427059, 365.370085, 4, 0.969598, clustering_choice=''GaussianMixture'', covariance_type___GaussianMixture=''diag'', init_params___GaussianMixture=''random'', n_components___GaussianMixture='8', warm_start___GaussianMixture='True'
+731.096133, 0.425496, 733.082788, 5, 1.986654, clustering_choice=''GaussianMixture'', covariance_type___GaussianMixture=''diag'', init_params___GaussianMixture=''random'', n_components___GaussianMixture='10', warm_start___GaussianMixture='True'
+1279.353040, 0.414169, 1282.522813, 6, 3.169774, clustering_choice=''Birch'', branching_factor___Birch='79', n_clusters___Birch='9'
+2542.672566, 0.413140, 2547.215770, 7, 4.543204, clustering_choice=''Birch'', branching_factor___Birch='281', n_clusters___Birch='2'

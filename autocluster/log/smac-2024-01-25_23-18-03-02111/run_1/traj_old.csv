@@ -1,0 +1,10 @@
+"CPU Time Used","Estimated Training Performance","Wallclock Time","Incumbent ID","Automatic Configurator (CPU) Time","Configuration..."
+0.000000, 2147483648.000000, 0.000157, 1, 0.000157, clustering_choice=''KMeans'', n_clusters___KMeans='5'
+180.083345, 2147483647.000000, 180.097716, 1, 0.014371, clustering_choice=''KMeans'', n_clusters___KMeans='5'
+181.012243, 0.355030, 181.293782, 2, 0.281538, clustering_choice=''DBSCAN'', eps___DBSCAN='0.8060641411534598', min_samples___DBSCAN='67'
+902.271728, 0.290435, 903.907513, 3, 1.635785, clustering_choice=''DBSCAN'', eps___DBSCAN='0.9113820295628684', min_samples___DBSCAN='76'
+1082.933701, 0.272074, 1085.040603, 4, 2.106902, clustering_choice=''DBSCAN'', eps___DBSCAN='1.0282506339980406', min_samples___DBSCAN='97'
+1083.030915, 0.270953, 1085.180265, 5, 2.149350, clustering_choice=''DBSCAN'', eps___DBSCAN='0.9933263600312023', min_samples___DBSCAN='91'
+1083.111915, 0.270808, 1085.483226, 6, 2.371311, clustering_choice=''DBSCAN'', eps___DBSCAN='1.0342328081992724', min_samples___DBSCAN='95'
+1443.410902, 0.232695, 1446.143790, 7, 2.732889, clustering_choice=''AgglomerativeClustering'', affinity___AgglomerativeClustering=''manhattan'', linkage___AgglomerativeClustering=''complete'', n_clusters___AgglomerativeClustering='7'
+2346.822831, 0.162214, 2351.595254, 8, 4.772423, clustering_choice=''Birch'', branching_factor___Birch='370', n_clusters___Birch='51'

@@ -1,0 +1,8 @@
+"CPU Time Used","Estimated Training Performance","Wallclock Time","Incumbent ID","Automatic Configurator (CPU) Time","Configuration..."
+0.000000, 2147483648.000000, 0.000226, 1, 0.000226, clustering_choice=''KMeans'', n_clusters___KMeans='5'
+180.107800, 2147483647.000000, 180.135818, 1, 0.028018, clustering_choice=''KMeans'', n_clusters___KMeans='5'
+408.747447, 0.513677, 409.366060, 2, 0.618613, clustering_choice=''GaussianMixture'', covariance_type___GaussianMixture=''full'', init_params___GaussianMixture=''random'', n_components___GaussianMixture='11', warm_start___GaussianMixture='True'
+410.899449, 0.429211, 411.665630, 3, 0.766181, clustering_choice=''Birch'', branching_factor___Birch='414', n_clusters___Birch='8'
+1516.376951, 0.425632, 1518.847677, 4, 2.470725, clustering_choice=''AgglomerativeClustering'', affinity___AgglomerativeClustering=''euclidean'', linkage___AgglomerativeClustering=''average'', n_clusters___AgglomerativeClustering='6'
+1518.078668, 0.405392, 1520.698229, 5, 2.619561, clustering_choice=''AgglomerativeClustering'', affinity___AgglomerativeClustering=''cityblock'', linkage___AgglomerativeClustering=''complete'', n_clusters___AgglomerativeClustering='4'
+1882.002295, 0.393865, 1885.348042, 6, 3.345747, clustering_choice=''AgglomerativeClustering'', affinity___AgglomerativeClustering=''l2'', linkage___AgglomerativeClustering=''average'', n_clusters___AgglomerativeClustering='3'

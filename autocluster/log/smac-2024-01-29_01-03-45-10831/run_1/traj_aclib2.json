@@ -1,0 +1,3 @@
+{"cpu_time": 0, "total_cpu_time": null, "wallclock_time": 0.00018835067749023438, "evaluations": 0, "cost": 2147483648, "incumbent": ["clustering_choice=''KMeans''", "n_clusters___KMeans='5'"]}
+{"cpu_time": 2.522002696990967, "total_cpu_time": null, "wallclock_time": 2.5344252586364746, "evaluations": 1, "cost": 0.4404170409954921, "incumbent": ["clustering_choice=''KMeans''", "n_clusters___KMeans='5'"]}
+{"cpu_time": 13.988769769668579, "total_cpu_time": null, "wallclock_time": 15.365806341171265, "evaluations": 20, "cost": 0.33631245630481094, "incumbent": ["clustering_choice=''KMeans''", "n_clusters___KMeans='2'"]}

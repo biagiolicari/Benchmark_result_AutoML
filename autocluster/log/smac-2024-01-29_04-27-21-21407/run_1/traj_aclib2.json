@@ -1,0 +1,5 @@
+{"cpu_time": 0, "total_cpu_time": null, "wallclock_time": 0.00011420249938964844, "evaluations": 0, "cost": 2147483648, "incumbent": ["clustering_choice=''KMeans''", "n_clusters___KMeans='5'"]}
+{"cpu_time": 0.297776460647583, "total_cpu_time": null, "wallclock_time": 0.31113672256469727, "evaluations": 1, "cost": 0.2118169185544697, "incumbent": ["clustering_choice=''KMeans''", "n_clusters___KMeans='5'"]}
+{"cpu_time": 0.6047821044921875, "total_cpu_time": null, "wallclock_time": 0.829401969909668, "evaluations": 4, "cost": 0.18918337392552967, "incumbent": ["clustering_choice=''Birch''", "branching_factor___Birch='922'", "n_clusters___Birch='71'"]}
+{"cpu_time": 2.0791053771972656, "total_cpu_time": null, "wallclock_time": 2.7705326080322266, "evaluations": 11, "cost": 0.16623633321443648, "incumbent": ["clustering_choice=''KMeans''", "n_clusters___KMeans='12'"]}
+{"cpu_time": 3.284963846206665, "total_cpu_time": null, "wallclock_time": 4.477566719055176, "evaluations": 19, "cost": 0.15461293257982398, "incumbent": ["clustering_choice=''KMeans''", "n_clusters___KMeans='10'"]}

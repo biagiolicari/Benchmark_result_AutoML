@@ -1,0 +1,9 @@
+"CPU Time Used","Estimated Training Performance","Wallclock Time","Incumbent ID","Automatic Configurator (CPU) Time","Configuration..."
+0.000000, 2147483648.000000, 0.000103, 1, 0.000103, clustering_choice=''KMeans'', n_clusters___KMeans='5'
+180.110911, 2147483647.000000, 180.128065, 1, 0.017154, clustering_choice=''KMeans'', n_clusters___KMeans='5'
+180.203406, 0.384306, 180.329434, 2, 0.126027, clustering_choice=''AgglomerativeClustering'', affinity___AgglomerativeClustering=''l2'', linkage___AgglomerativeClustering=''complete'', n_clusters___AgglomerativeClustering='8'
+721.282109, 0.364548, 722.040666, 3, 0.758556, clustering_choice=''AgglomerativeClustering'', affinity___AgglomerativeClustering=''l2'', linkage___AgglomerativeClustering=''complete'', n_clusters___AgglomerativeClustering='6'
+1443.960486, 0.280661, 1445.805059, 4, 1.844573, clustering_choice=''AgglomerativeClustering'', affinity___AgglomerativeClustering=''l2'', linkage___AgglomerativeClustering=''average'', n_clusters___AgglomerativeClustering='4'
+1624.302633, 0.211291, 1626.482700, 5, 2.180068, clustering_choice=''AgglomerativeClustering'', affinity___AgglomerativeClustering=''l2'', linkage___AgglomerativeClustering=''average'', n_clusters___AgglomerativeClustering='3'
+2888.731685, 0.211098, 2892.843521, 6, 4.111837, clustering_choice=''Birch'', branching_factor___Birch='379', n_clusters___Birch='3'
+2889.757878, 0.210914, 2894.349683, 7, 4.591805, clustering_choice=''MeanShift'', bandwidth___MeanShift='2.2839947525759534', bin_seeding___MeanShift='True'

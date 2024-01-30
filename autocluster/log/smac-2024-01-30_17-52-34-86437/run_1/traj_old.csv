@@ -1,0 +1,5 @@
+"CPU Time Used","Estimated Training Performance","Wallclock Time","Incumbent ID","Automatic Configurator (CPU) Time","Configuration..."
+0.000000, 2147483648.000000, 0.000221, 1, 0.000221, clustering_choice=''KMeans'', n_clusters___KMeans='5'
+5.912519, 0.448676, 5.933651, 1, 0.021132, clustering_choice=''KMeans'', n_clusters___KMeans='5'
+25.811996, 0.428489, 26.877197, 2, 1.065200, clustering_choice=''KMeans'', n_clusters___KMeans='2'
+83.581055, 0.425778, 87.833265, 3, 4.252210, clustering_choice=''SpectralClustering'', affinity___SpectralClustering=''nearest_neighbors'', assign_labels___SpectralClustering=''kmeans'', eigen_solver___SpectralClustering=''arpack'', n_clusters___SpectralClustering='2'

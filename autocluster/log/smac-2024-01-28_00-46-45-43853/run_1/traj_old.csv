@@ -1,0 +1,10 @@
+"CPU Time Used","Estimated Training Performance","Wallclock Time","Incumbent ID","Automatic Configurator (CPU) Time","Configuration..."
+0.000000, 2147483648.000000, 0.000198, 1, 0.000198, clustering_choice=''KMeans'', n_clusters___KMeans='5'
+180.092458, 2147483647.000000, 180.112552, 1, 0.020094, clustering_choice=''KMeans'', n_clusters___KMeans='5'
+361.174292, 0.352690, 361.458915, 2, 0.284622, clustering_choice=''DBSCAN'', eps___DBSCAN='4.536456874688381', min_samples___DBSCAN='95'
+361.841543, 0.351193, 362.694340, 3, 0.852797, clustering_choice=''DBSCAN'', eps___DBSCAN='4.695515684800912', min_samples___DBSCAN='96'
+905.846291, 0.350870, 907.947995, 4, 2.101704, clustering_choice=''DBSCAN'', eps___DBSCAN='4.496630298309541', min_samples___DBSCAN='18'
+1266.662180, 0.348083, 1269.422113, 5, 2.759933, clustering_choice=''DBSCAN'', eps___DBSCAN='4.73811096123045', min_samples___DBSCAN='16'
+1627.966751, 0.343982, 1631.758152, 6, 3.791401, clustering_choice=''DBSCAN'', eps___DBSCAN='4.8078272290898205', min_samples___DBSCAN='9'
+1809.474639, 0.343416, 1813.635639, 7, 4.161000, clustering_choice=''DBSCAN'', eps___DBSCAN='4.806868467928543', min_samples___DBSCAN='8'
+1810.845369, 0.342009, 1815.285765, 8, 4.440397, clustering_choice=''DBSCAN'', eps___DBSCAN='4.856097254088745', min_samples___DBSCAN='7'

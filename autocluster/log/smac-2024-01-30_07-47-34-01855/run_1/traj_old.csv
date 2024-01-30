@@ -1,0 +1,11 @@
+"CPU Time Used","Estimated Training Performance","Wallclock Time","Incumbent ID","Automatic Configurator (CPU) Time","Configuration..."
+0.000000, 2147483648.000000, 0.000110, 1, 0.000110, clustering_choice=''KMeans'', n_clusters___KMeans='5'
+180.047401, 2147483647.000000, 180.063316, 1, 0.015915, clustering_choice=''KMeans'', n_clusters___KMeans='5'
+720.522457, 0.437790, 721.154942, 2, 0.632485, clustering_choice=''AgglomerativeClustering'', affinity___AgglomerativeClustering=''euclidean'', linkage___AgglomerativeClustering=''average'', n_clusters___AgglomerativeClustering='41'
+720.625581, 0.403592, 721.427429, 3, 0.801848, clustering_choice=''AgglomerativeClustering'', affinity___AgglomerativeClustering=''manhattan'', linkage___AgglomerativeClustering=''average'', n_clusters___AgglomerativeClustering='30'
+900.765921, 0.388709, 901.717775, 4, 0.951854, clustering_choice=''AgglomerativeClustering'', affinity___AgglomerativeClustering=''cosine'', linkage___AgglomerativeClustering=''average'', n_clusters___AgglomerativeClustering='29'
+900.827862, 0.386580, 901.800009, 5, 0.972147, clustering_choice=''AgglomerativeClustering'', affinity___AgglomerativeClustering=''cosine'', linkage___AgglomerativeClustering=''complete'', n_clusters___AgglomerativeClustering='27'
+900.917999, 0.385080, 902.103540, 6, 1.185542, clustering_choice=''AgglomerativeClustering'', affinity___AgglomerativeClustering=''l2'', linkage___AgglomerativeClustering=''average'', n_clusters___AgglomerativeClustering='29'
+1982.323395, 0.284154, 1985.270008, 7, 2.946613, clustering_choice=''AgglomerativeClustering'', affinity___AgglomerativeClustering=''l1'', linkage___AgglomerativeClustering=''single'', n_clusters___AgglomerativeClustering='10'
+2703.116587, 0.277883, 2706.995427, 8, 3.878839, clustering_choice=''AgglomerativeClustering'', affinity___AgglomerativeClustering=''manhattan'', linkage___AgglomerativeClustering=''average'', n_clusters___AgglomerativeClustering='14'
+2703.149849, 0.271159, 2707.170372, 9, 4.020523, clustering_choice=''AgglomerativeClustering'', affinity___AgglomerativeClustering=''euclidean'', linkage___AgglomerativeClustering=''average'', n_clusters___AgglomerativeClustering='14'

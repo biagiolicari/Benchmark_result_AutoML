@@ -1,0 +1,4 @@
+"CPU Time Used","Estimated Training Performance","Wallclock Time","Incumbent ID","Automatic Configurator (CPU) Time","Configuration..."
+0.000000, 2147483648.000000, 0.000188, 1, 0.000188, clustering_choice=''KMeans'', n_clusters___KMeans='5'
+2.522003, 0.440417, 2.534425, 1, 0.012423, clustering_choice=''KMeans'', n_clusters___KMeans='5'
+13.988770, 0.336312, 15.365806, 2, 1.377037, clustering_choice=''KMeans'', n_clusters___KMeans='2'

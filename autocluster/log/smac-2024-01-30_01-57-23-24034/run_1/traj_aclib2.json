@@ -1,0 +1,5 @@
+{"cpu_time": 0, "total_cpu_time": null, "wallclock_time": 0.000179290771484375, "evaluations": 0, "cost": 2147483648, "incumbent": ["clustering_choice=''KMeans''", "n_clusters___KMeans='5'"]}
+{"cpu_time": 180.10614800453186, "total_cpu_time": null, "wallclock_time": 180.12496757507324, "evaluations": 1, "cost": 2147483647.0, "incumbent": ["clustering_choice=''KMeans''", "n_clusters___KMeans='5'"]}
+{"cpu_time": 180.2710783481598, "total_cpu_time": null, "wallclock_time": 180.39862847328186, "evaluations": 2, "cost": 0.3036696316054803, "incumbent": ["clustering_choice=''DBSCAN''", "eps___DBSCAN='3.9262424026638914'", "min_samples___DBSCAN='91'"]}
+{"cpu_time": 361.0097658634186, "total_cpu_time": null, "wallclock_time": 361.37309551239014, "evaluations": 6, "cost": 0.24024749978445778, "incumbent": ["clustering_choice=''DBSCAN''", "eps___DBSCAN='1.0601295134115296'", "min_samples___DBSCAN='63'"]}
+{"cpu_time": 361.61845541000366, "total_cpu_time": null, "wallclock_time": 362.4519371986389, "evaluations": 12, "cost": 0.23997206022453013, "incumbent": ["clustering_choice=''DBSCAN''", "eps___DBSCAN='3.115530043807516'", "min_samples___DBSCAN='91'"]}

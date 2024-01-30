@@ -1,0 +1,10 @@
+"CPU Time Used","Estimated Training Performance","Wallclock Time","Incumbent ID","Automatic Configurator (CPU) Time","Configuration..."
+0.000000, 2147483648.000000, 0.000194, 1, 0.000194, clustering_choice=''KMeans'', n_clusters___KMeans='5'
+180.106659, 2147483647.000000, 180.127218, 1, 0.020559, clustering_choice=''KMeans'', n_clusters___KMeans='5'
+361.169099, 0.557947, 361.577574, 2, 0.408475, clustering_choice=''SpectralClustering'', affinity___SpectralClustering=''laplacian'', assign_labels___SpectralClustering=''discretize'', eigen_solver___SpectralClustering=''arpack'', n_clusters___SpectralClustering='75'
+901.895607, 0.552301, 902.929338, 3, 1.033731, clustering_choice=''SpectralClustering'', affinity___SpectralClustering=''nearest_neighbors'', assign_labels___SpectralClustering=''discretize'', eigen_solver___SpectralClustering=''arpack'', n_clusters___SpectralClustering='43'
+902.101735, 0.547663, 903.154218, 4, 1.052484, clustering_choice=''GaussianMixture'', covariance_type___GaussianMixture=''tied'', init_params___GaussianMixture=''random'', n_components___GaussianMixture='45', warm_start___GaussianMixture='True'
+902.894252, 0.527766, 904.212247, 5, 1.317995, clustering_choice=''SpectralClustering'', affinity___SpectralClustering=''nearest_neighbors'', assign_labels___SpectralClustering=''discretize'', eigen_solver___SpectralClustering=''arpack'', n_clusters___SpectralClustering='52'
+903.301453, 0.516928, 904.842900, 6, 1.541446, clustering_choice=''SpectralClustering'', affinity___SpectralClustering=''nearest_neighbors'', assign_labels___SpectralClustering=''discretize'', eigen_solver___SpectralClustering=''arpack'', n_clusters___SpectralClustering='61'
+1086.489766, 0.511178, 1089.200832, 7, 2.711066, clustering_choice=''SpectralClustering'', affinity___SpectralClustering=''nearest_neighbors'', assign_labels___SpectralClustering=''discretize'', eigen_solver___SpectralClustering=''arpack'', n_clusters___SpectralClustering='63'
+1086.542301, 0.413466, 1089.273700, 8, 2.731399, clustering_choice=''Birch'', branching_factor___Birch='541', n_clusters___Birch='7'

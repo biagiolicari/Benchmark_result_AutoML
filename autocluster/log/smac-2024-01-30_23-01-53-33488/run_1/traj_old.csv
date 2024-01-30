@@ -1,0 +1,9 @@
+"CPU Time Used","Estimated Training Performance","Wallclock Time","Incumbent ID","Automatic Configurator (CPU) Time","Configuration..."
+0.000000, 2147483648.000000, 0.000207, 1, 0.000207, clustering_choice=''KMeans'', n_clusters___KMeans='5'
+180.106902, 2147483647.000000, 180.126830, 1, 0.019928, clustering_choice=''KMeans'', n_clusters___KMeans='5'
+180.714841, 0.382287, 180.864358, 2, 0.149517, clustering_choice=''DBSCAN'', eps___DBSCAN='2.391717875326536', min_samples___DBSCAN='90'
+189.481505, 0.382232, 190.008348, 3, 0.526844, clustering_choice=''OPTICS'', cluster_method___OPTICS=''xi'', metric___OPTICS=''manhattan'', min_samples___OPTICS='68'
+751.162526, 0.382195, 753.252031, 4, 2.089505, clustering_choice=''DBSCAN'', eps___DBSCAN='3.1287886826629516', min_samples___DBSCAN='95'
+1482.064025, 0.375744, 1485.807019, 5, 3.742993, clustering_choice=''DBSCAN'', eps___DBSCAN='3.543816487808511', min_samples___DBSCAN='77'
+1482.810999, 0.369720, 1486.695414, 6, 3.884414, clustering_choice=''DBSCAN'', eps___DBSCAN='3.4310599686704544', min_samples___DBSCAN='76'
+2228.039638, 0.362001, 2234.093710, 7, 6.054072, clustering_choice=''Birch'', branching_factor___Birch='442', n_clusters___Birch='12'

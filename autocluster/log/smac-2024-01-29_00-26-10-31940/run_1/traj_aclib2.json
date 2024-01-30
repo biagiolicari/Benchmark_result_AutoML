@@ -1,0 +1,3 @@
+{"cpu_time": 0, "total_cpu_time": null, "wallclock_time": 0.00011277198791503906, "evaluations": 0, "cost": 2147483648, "incumbent": ["clustering_choice=''KMeans''", "n_clusters___KMeans='5'"]}
+{"cpu_time": 180.02227306365967, "total_cpu_time": null, "wallclock_time": 180.0383861064911, "evaluations": 1, "cost": 2147483647.0, "incumbent": ["clustering_choice=''KMeans''", "n_clusters___KMeans='5'"]}
+{"cpu_time": 360.2302715778351, "total_cpu_time": null, "wallclock_time": 360.57673263549805, "evaluations": 5, "cost": 0.15767959826378422, "incumbent": ["clustering_choice=''AgglomerativeClustering''", "affinity___AgglomerativeClustering=''cityblock''", "linkage___AgglomerativeClustering=''single''", "n_clusters___AgglomerativeClustering='11'"]}

@@ -1,0 +1,6 @@
+"CPU Time Used","Estimated Training Performance","Wallclock Time","Incumbent ID","Automatic Configurator (CPU) Time","Configuration..."
+0.000000, 2147483648.000000, 0.000104, 1, 0.000104, clustering_choice=''KMeans'', n_clusters___KMeans='5'
+180.032577, 2147483647.000000, 180.048307, 1, 0.015730, clustering_choice=''KMeans'', n_clusters___KMeans='5'
+722.594748, 0.157547, 723.164031, 2, 0.569283, clustering_choice=''Birch'', branching_factor___Birch='123', n_clusters___Birch='36'
+903.099785, 0.141721, 903.829572, 3, 0.729787, clustering_choice=''AgglomerativeClustering'', affinity___AgglomerativeClustering=''l2'', linkage___AgglomerativeClustering=''complete'', n_clusters___AgglomerativeClustering='6'
+905.453733, 0.139128, 906.607202, 4, 1.153469, clustering_choice=''Birch'', branching_factor___Birch='699', n_clusters___Birch='6'

@@ -1,0 +1,8 @@
+"CPU Time Used","Estimated Training Performance","Wallclock Time","Incumbent ID","Automatic Configurator (CPU) Time","Configuration..."
+0.000000, 2147483648.000000, 0.000199, 1, 0.000199, clustering_choice=''KMeans'', n_clusters___KMeans='5'
+180.107417, 2147483647.000000, 180.126294, 1, 0.018877, clustering_choice=''KMeans'', n_clusters___KMeans='5'
+180.484288, 0.396132, 180.613168, 2, 0.128880, clustering_choice=''AgglomerativeClustering'', affinity___AgglomerativeClustering=''euclidean'', linkage___AgglomerativeClustering=''complete'', n_clusters___AgglomerativeClustering='7'
+188.703997, 0.385992, 190.057406, 3, 1.353409, clustering_choice=''AgglomerativeClustering'', affinity___AgglomerativeClustering=''euclidean'', linkage___AgglomerativeClustering=''complete'', n_clusters___AgglomerativeClustering='8'
+1460.248204, 0.369799, 1463.758156, 4, 3.509951, clustering_choice=''AgglomerativeClustering'', affinity___AgglomerativeClustering=''cosine'', linkage___AgglomerativeClustering=''complete'', n_clusters___AgglomerativeClustering='9'
+2914.008410, 0.361791, 2919.990673, 5, 5.982263, clustering_choice=''AgglomerativeClustering'', affinity___AgglomerativeClustering=''euclidean'', linkage___AgglomerativeClustering=''ward'', n_clusters___AgglomerativeClustering='8'
+2916.383958, 0.328128, 2922.397722, 6, 6.013764, clustering_choice=''SpectralClustering'', affinity___SpectralClustering=''laplacian'', assign_labels___SpectralClustering=''discretize'', eigen_solver___SpectralClustering=''arpack'', n_clusters___SpectralClustering='14'

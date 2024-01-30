@@ -1,0 +1,6 @@
+"CPU Time Used","Estimated Training Performance","Wallclock Time","Incumbent ID","Automatic Configurator (CPU) Time","Configuration..."
+0.000000, 2147483648.000000, 0.000202, 1, 0.000202, clustering_choice=''KMeans'', n_clusters___KMeans='5'
+180.106973, 2147483647.000000, 180.126612, 1, 0.019639, clustering_choice=''KMeans'', n_clusters___KMeans='5'
+363.206932, 0.524786, 363.853422, 2, 0.646490, clustering_choice=''GaussianMixture'', covariance_type___GaussianMixture=''full'', init_params___GaussianMixture=''random'', n_components___GaussianMixture='11', warm_start___GaussianMixture='True'
+543.497032, 0.415818, 544.267162, 3, 0.770129, clustering_choice=''AgglomerativeClustering'', affinity___AgglomerativeClustering=''l2'', linkage___AgglomerativeClustering=''complete'', n_clusters___AgglomerativeClustering='6'
+1808.878855, 0.413452, 1811.383290, 4, 2.504435, clustering_choice=''GaussianMixture'', covariance_type___GaussianMixture=''diag'', init_params___GaussianMixture=''random'', n_components___GaussianMixture='2', warm_start___GaussianMixture='True'

@@ -1,0 +1,7 @@
+"CPU Time Used","Estimated Training Performance","Wallclock Time","Incumbent ID","Automatic Configurator (CPU) Time","Configuration..."
+0.000000, 2147483648.000000, 0.000226, 1, 0.000226, clustering_choice=''KMeans'', n_clusters___KMeans='5'
+180.104100, 2147483647.000000, 180.118502, 1, 0.014401, clustering_choice=''KMeans'', n_clusters___KMeans='5'
+740.113241, 0.475783, 741.501307, 2, 1.388067, clustering_choice=''SpectralClustering'', affinity___SpectralClustering=''nearest_neighbors'', assign_labels___SpectralClustering=''discretize'', eigen_solver___SpectralClustering=''arpack'', n_clusters___SpectralClustering='28'
+1836.765901, 0.475489, 1839.581227, 3, 2.815326, clustering_choice=''SpectralClustering'', affinity___SpectralClustering=''nearest_neighbors'', assign_labels___SpectralClustering=''discretize'', eigen_solver___SpectralClustering=''arpack'', n_clusters___SpectralClustering='33'
+2748.798421, 0.474951, 2753.065292, 4, 4.266871, clustering_choice=''SpectralClustering'', affinity___SpectralClustering=''nearest_neighbors'', assign_labels___SpectralClustering=''discretize'', eigen_solver___SpectralClustering=''arpack'', n_clusters___SpectralClustering='22'
+2931.900899, 0.474243, 2936.496195, 5, 4.595295, clustering_choice=''SpectralClustering'', affinity___SpectralClustering=''nearest_neighbors'', assign_labels___SpectralClustering=''discretize'', eigen_solver___SpectralClustering=''arpack'', n_clusters___SpectralClustering='17'
