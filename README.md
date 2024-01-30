@@ -5,9 +5,21 @@
 
 ## Execute the frameworks
 
-- In a terminal, execute the command cd [framework_folder]
-- Inside the framework folder there is a script file " run_[framework name]_experiments.sh ", in the terminal run chmod +x run_[framework name]_experiments.sh
-- After that, type ./run_[framework name]_experiments.sh in the terminal, this script permits to create a conda environment with the required package and then executes the framework.
+- In a terminal, execute the command
+```console
+ cd [framework_folder]
+ ```
+
+- Inside the framework folder there is a script file called run_[framework name]_experiments.sh, in the terminal run 
+```console
+chmod +x run_[framework name]_experiments.sh
+```
+
+- After that, type
+```console
+ ./run_[framework name]_experiments.sh
+ ``` 
+ this script permits to create a conda environment with the required packages and then executes the framework.
 
 
 # Reproduce paper result
