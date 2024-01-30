@@ -84,7 +84,7 @@ def run_autocluster():
                 result = pd.DataFrame(columns=col_names_df)
                 run = dict()
                 run['dataset'] = dataset_name
-                run['framework'] = 'autocluster'
+                run['framework'] = 'Autocluster'
 
                 general_metafeatures = MetafeatureMapper.getGeneralMetafeatures()
                 numeric_metafeatures = MetafeatureMapper.getNumericMetafeatures()

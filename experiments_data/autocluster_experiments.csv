@@ -91,6 +91,11 @@ dim3-clusters3-instances300-overlap1e-06-1e-05-aspectref5-aspectmaxmin5-radius5-
 dim18-clusters4-instances4500-overlap1e-06-1e-05-aspectref1.5-aspectmaxmin1-radius3-imbalance2-rep2,Autocluster,0.2799174558604251,0.5531989922291205,4.13755709011978,52.65,4.19
 dim70-clusters19-instances3500-overlap1e-06-1e-05-aspectref3-aspectmaxmin1-radius5-imbalance1-rep2,Autocluster,0.0321057911219845,0.4921671402571405,2.600091332181867,77.49,4.04
 dim53-clusters4-instances3000-overlap1e-06-1e-05-aspectref1.5-aspectmaxmin1-radius5-imbalance1-rep3,Autocluster,0.2406389975592298,0.71408141862904,1.8591575927030908,15.75,6.52
+dim5-clusters2-instances3000-overlap1e-06-1e-05-aspectref3-aspectmaxmin1-radius3-imbalance2-rep1,Autocluster,0.4765818093158636,0.9986500224998252,0.7264480140531075,5.85,6.57
+dim10-clusters3-instances3500-overlap1e-06-1e-05-aspectref5-aspectmaxmin1-radius5-imbalance2-rep11,Autocluster,0.3676584124747162,-0.0186808466704462,5.327630816675407,2.84,2.52
+dim52-clusters7-instances300-overlap1e-06-1e-05-aspectref3-aspectmaxmin1-radius5-imbalance2-rep3,Autocluster,0.1644835699391425,0.0809747124616366,1.8263378371634733,2.1,6.45
+dim2-clusters15-instances200-overlap1e-06-1e-05-aspectref3-aspectmaxmin3-radius5-imbalance1-rep1,Autocluster,0.7089654292089936,0.904246723831294,0.3991155629878531,0.19,6.45
+dim5-clusters2-instances3000-overlap1e-06-1e-05-aspectref5-aspectmaxmin5-radius3-imbalance2-rep11,Autocluster,0.2817381750728369,0.9959527683547608,1.1873563091575376,6.35,6.49
 dim10-clusters2-instances1500-overlap1e-06-1e-05-aspectref1.5-aspectmaxmin1-radius5-imbalance1-rep11,Autocluster,0.5441347174185177,0.9973333321497304,0.7512976790260673,2.37,4.09
 dim10-clusters2-instances2000-overlap1e-06-1e-05-aspectref5-aspectmaxmin1-radius1-imbalance1-rep11,Autocluster,0.4312110018866473,1.0,0.980603036867374,3.9,4.09
 dim10-clusters2-instances3500-overlap1e-06-1e-05-aspectref1.5-aspectmaxmin3-radius1-imbalance2-rep1,Autocluster,0.5295360202938105,1.0,0.7417783637091969,7.83,4.14
