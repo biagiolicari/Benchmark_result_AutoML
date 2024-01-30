@@ -1,0 +1,2 @@
+{"cpu_time": 0.0, "wallclock_time": 8.416175842285156e-05, "evaluations": 0, "cost": 2147483648.0, "incumbent": ["algorithm=''birch''", "n_clusters='50'"], "origin": "Initial design"}
+{"cpu_time": 0.056546688079833984, "wallclock_time": 0.0583653450012207, "evaluations": 1, "cost": 1.0, "incumbent": ["algorithm=''birch''", "n_clusters='50'"], "origin": "Initial design"}

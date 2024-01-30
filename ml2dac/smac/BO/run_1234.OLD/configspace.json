@@ -1,0 +1,36 @@
+{
+  "hyperparameters": [
+    {
+      "name": "algorithm",
+      "type": "categorical",
+      "choices": [
+        "GMM",
+        "KMeans"
+      ],
+      "default": "GMM",
+      "weights": null
+    },
+    {
+      "name": "n_clusters",
+      "type": "uniform_int",
+      "log": false,
+      "lower": 2,
+      "upper": 200,
+      "default": 2
+    }
+  ],
+  "conditions": [
+    {
+      "child": "n_clusters",
+      "parent": "algorithm",
+      "type": "IN",
+      "values": [
+        "GMM",
+        "KMeans"
+      ]
+    }
+  ],
+  "forbiddens": [],
+  "python_module_version": "0.6.0",
+  "json_format_version": 0.4
+}

@@ -1,0 +1,5 @@
+"CPU Time Used","Estimated Training Performance","Wallclock Time","Incumbent ID","Automatic Configurator (CPU) Time","Configuration..."
+0.000000, 2147483648.000000, 0.002314, 1, 0.002314, algorithm=''means_shift'',quantile='0.9400000000000001'
+19.285847, 0.000000, 19.291906, 1, 0.006060, algorithm=''means_shift'',quantile='0.9400000000000001'
+30.846628, -0.028400, 30.866193, 2, 0.019565, algorithm=''KMeans'',n_clusters='75'
+53.925265, -1.000000, 54.000550, 3, 0.075285, algorithm=''dbscan'',eps='0.16',min_samples='29'

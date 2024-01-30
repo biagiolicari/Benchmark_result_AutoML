@@ -1,0 +1,5 @@
+"CPU Time Used","Estimated Training Performance","Wallclock Time","Incumbent ID","Automatic Configurator (CPU) Time","Configuration..."
+0.000000, 2147483648.000000, 0.000098, 1, 0.000098, algorithm=''GMM'',n_clusters='37'
+1.601647, -0.031200, 1.604605, 1, 0.002959, algorithm=''GMM'',n_clusters='37'
+9.373443, -0.148100, 9.412696, 2, 0.039253, algorithm=''GMM'',n_clusters='56'
+9.624893, -0.235500, 9.677613, 3, 0.052720, algorithm=''GMM'',n_clusters='2'

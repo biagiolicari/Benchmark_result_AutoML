@@ -1,0 +1,12 @@
+algorithm categorical {KMeans, GMM, MBKMeans, ward, dbscan, birch, spectral, means_shift, affinity_propagation} [KMeans]
+Q0_damping real [0.5, 0.99] [0.745]
+Q0_eps real [0.1, 1.0] [0.55]
+min_samples integer [2, 200] [101]
+n_clusters integer [2, 200] [2]
+Q0_quantile real [0.0, 1.0] [0.5]
+
+damping | algorithm in {affinity_propagation}
+eps | algorithm in {dbscan}
+min_samples | algorithm in {dbscan}
+n_clusters | algorithm in {KMeans, GMM, MBKMeans, ward, birch, spectral}
+quantile | algorithm in {means_shift}

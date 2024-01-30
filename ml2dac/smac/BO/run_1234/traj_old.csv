@@ -1,0 +1,3 @@
+"CPU Time Used","Estimated Training Performance","Wallclock Time","Incumbent ID","Automatic Configurator (CPU) Time","Configuration..."
+0.000000, 2147483648.000000, 0.000084, 1, 0.000084, algorithm=''birch'',n_clusters='50'
+0.056547, 1.000000, 0.058365, 1, 0.001819, algorithm=''birch'',n_clusters='50'
