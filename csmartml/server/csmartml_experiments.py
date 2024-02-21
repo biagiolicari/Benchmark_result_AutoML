@@ -54,7 +54,7 @@ def run_csmartml_experiments():
     pop = 10 # Number of warmstart configurations (has to be smaller than n_loops)
     time_limit = 18000 # Time limit of overall optimization --> Aborts earlier if n_loops not finished but time_limit reached
     cvi = "predict" #predict a cvi based on our meta-knowledge
-    n_executions = 2
+    n_executions = 5
     # Define the relative path to the data folder
     relative_path_to_data = "../datasets"
     # Set the path to reach the data folder
@@ -84,7 +84,7 @@ def run_csmartml_experiments():
                 except TimeoutError:
                     print(f"Timeout: The fitting and predicting process for {dataset_name} exceeded 5 hours.")
                     # Handle the timeout as needed (e.g., log, continue with the next dataset, etc.)
-                    pass                
+                    continue                
                 
                 pop = res[0]
                 cluster = pop[0].fit(dataset)

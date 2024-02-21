@@ -60,7 +60,7 @@ def prepare_dataset(relative_path:Path):
 
 
 def run_ml2dac_experiments():
-    n_executions = 2
+    n_executions = 5
     n_warmstarts = 10 # Number of warmstart configurations (has to be smaller than n_loops)
     n_loops = 100 # Number of optimizer loops. This is n_loops = n_warmstarts + x
     limit_cs = True # Reduces the search space to suitable algorithms, dependening on warmstart configurations

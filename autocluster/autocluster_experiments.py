@@ -65,7 +65,7 @@ def run_autocluster():
     datasets_to_use, true_labels_to_use, dataset_names_to_use = prepare_dataset(data_path)
 
     col_names_df = ['dataset','framework','dbs','sil','ari','running_time_min', 'optimal_cfg']
-    seed = [27, 1234]
+    seed = [27, 1234, 99, 10, 1]
 
     file_path="autocluster_experiments.csv"
     # Check if the file exists
@@ -129,7 +129,7 @@ def run_autocluster():
                 except TimeoutError:
                     print(f"Timeout: The fitting and predicting process for {dataset_name} exceeded 5 hours.")
                     # Handle the timeout as needed (e.g., log, continue with the next dataset, etc.)
-                    pass
+                    continue
 
 
                 record = cluster.get_trajectory()
@@ -142,7 +142,7 @@ def run_autocluster():
                     run['dbs'] = dbs
                     run['ari'] = ari
                 except:
-                    pass
+                    continue
                 
                 run['running_time_min'] = (round((running_time / 60), 3)) 
                 result = result.append(run, ignore_index=True)

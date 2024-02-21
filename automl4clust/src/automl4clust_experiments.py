@@ -33,7 +33,7 @@ def prepare_dataset(path:Path):
 
 def run_automl_four_clust():
     n_loops = 100
-    n_executions = 2
+    n_executions = 5
     # Define the relative path to the data folder
     relative_path_to_data = "../datasets"
     # Set the path to reach the data folder
