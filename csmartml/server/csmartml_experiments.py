@@ -21,6 +21,13 @@ import os
 script_directory = Path(__file__).resolve().parent
 main_directory = script_directory.parent
 
+POP = 10 # Number of warmstart configurations (has to be smaller than n_loops)
+TIME_LIMIT = 18000 # Time limit of overall optimization --> Aborts earlier if n_loops not finished but time_limit reached
+cvi = "predict" #predict a cvi based on our meta-knowledge
+N_EXECUTIONS = 5
+# Define the relative path to the data folder
+RELATIVE_PATH_TO_DATASETS = "../datasets"
+
 def prepare_dataset(path:Path):
     dataset_dir = [f for f in path.iterdir()]
     datasets_to_use = []
@@ -51,14 +58,8 @@ def execute_csmartml_run(dataset, dataset_name, time_budget, population):
     return res, algorithm, elapsed_time
 
 def run_csmartml_experiments():
-    pop = 10 # Number of warmstart configurations (has to be smaller than n_loops)
-    time_limit = 18000 # Time limit of overall optimization --> Aborts earlier if n_loops not finished but time_limit reached
-    cvi = "predict" #predict a cvi based on our meta-knowledge
-    n_executions = 5
-    # Define the relative path to the data folder
-    relative_path_to_data = "../datasets"
     # Set the path to reach the data folder
-    data_path = main_directory / relative_path_to_data
+    data_path = main_directory / RELATIVE_PATH_TO_DATASETS
     datasets_to_use, true_labels_to_use, dataset_names_to_use = prepare_dataset(data_path)
     
     col_names_df = ['dataset','framework','dbs','sil','ari','running_time_min', 'optimal_cfg']
@@ -73,17 +74,16 @@ def run_csmartml_experiments():
     else:
         print(f"CSV file '{file_path}' already exists.")
 
-    for i in range(n_executions + 1):
+    for i in range(N_EXECUTIONS + 1):
         for dataset, dataset_name, dataset_labels, in zip(datasets_to_use, dataset_names_to_use, true_labels_to_use):
                 result = pd.DataFrame(columns=col_names_df)  
                 run = dict()
                 run['dataset'] = dataset_name
                 run['framework'] = 'cSmartML'
                 try:
-                    res, predictions, running_time = execute_csmartml_run(dataset, dataset_name, time_limit, pop)
+                    res, predictions, running_time = execute_csmartml_run(dataset, dataset_name, TIME_LIMIT, pop)
                 except TimeoutError:
                     print(f"Timeout: The fitting and predicting process for {dataset_name} exceeded 5 hours.")
-                    # Handle the timeout as needed (e.g., log, continue with the next dataset, etc.)
                     continue                
                 
                 pop = res[0]
@@ -98,6 +98,7 @@ def run_csmartml_experiments():
                             dataset_labels, cluster.labels_)
                 except:
                     print('error on calulate metrics')
+                    continue
                     
                 run['running_time_min'] = (round((running_time / 60), 3)) 
                 result = result.append(run, ignore_index=True)

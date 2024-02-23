@@ -32,6 +32,11 @@ from timeout_decorator import timeout, TimeoutError
 # Get the directory of the current script
 script_directory = Path(__file__).resolve().parent
 
+# Define the relative path to the data folder
+RELATIVE_PATH_TO_DATASETS = "../datasets"
+
+N_LOOPS = 100
+
 def prepare_dataset(path:Path):
     dataset_dir = [f for f in path.iterdir()]
     datasets_to_use = []
@@ -56,12 +61,8 @@ def fit_and_predict(cluster, dataset, dataset_name, fit_params):
     return res, predictions, elapsed_time
 
 def run_autocluster():
-    n_loops = 100
-    
-    # Define the relative path to the data folder
-    relative_path_to_data = "../datasets"
     # Set the path to reach the data folder
-    data_path = script_directory / relative_path_to_data
+    data_path = script_directory / RELATIVE_PATH_TO_DATASETS
     datasets_to_use, true_labels_to_use, dataset_names_to_use = prepare_dataset(data_path)
 
     col_names_df = ['dataset','framework','dbs','sil','ari','running_time_min', 'optimal_cfg']
@@ -99,7 +100,7 @@ def run_autocluster():
                 "cluster_alg_ls": ['KMeans', 'GaussianMixture', 'Birch', 'MiniBatchKMeans', 'AgglomerativeClustering', 'OPTICS', 
                 'SpectralClustering', 'DBSCAN', 'MeanShift'],
                 "optimizer": 'smac',
-                "n_evaluations": n_loops,
+                "n_evaluations": N_LOOPS,
                 "run_obj": 'quality',
                 "seed": s,
                 "cutoff_time": 180,

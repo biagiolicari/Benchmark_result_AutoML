@@ -18,6 +18,11 @@ import os
 script_directory = Path(__file__).resolve().parent
 main_directory = script_directory.parent
 
+N_LOOPS = 100
+N_EXECUTIONS = 5
+# Define the relative path to the data folder
+RELATIVE_PATH_TO_DATASETS = "../datasets"
+
 def prepare_dataset(path:Path):
     dataset_dir = [f for f in path.iterdir()]
     datasets_to_use = []
@@ -32,12 +37,8 @@ def prepare_dataset(path:Path):
     return datasets_to_use, true_labels_to_use, dataset_names_to_use, 
 
 def run_automl_four_clust():
-    n_loops = 100
-    n_executions = 5
-    # Define the relative path to the data folder
-    relative_path_to_data = "../datasets"
     # Set the path to reach the data folder
-    data_path = main_directory / relative_path_to_data
+    data_path = main_directory / RELATIVE_PATH_TO_DATASETS
     datasets_to_use, true_labels_to_use, dataset_names_to_use = prepare_dataset(data_path)
     col_names_df = ['dataset','framework','dbs','sil','ari','running_time_min', 'optimal_cfg']
 
@@ -52,19 +53,22 @@ def run_automl_four_clust():
     else:
         print(f"CSV file '{file_path}' already exists.")
 
-    for i in range(n_executions + 1):    
+    for i in range(N_EXECUTIONS + 1):    
         for dataset, dataset_name, dataset_labels, in zip(datasets_to_use, dataset_names_to_use, true_labels_to_use):
                 result = pd.DataFrame(columns=col_names_df)  
                 run = dict()
                 run['dataset'] = dataset_name
                 run['framework'] = 'AutoML4Clust'
 
-                t0 = time.time()
-                opt_instance = SMACOptimizer(dataset=dataset,
-                                            metric=MetricCollection.SILHOUETTE, n_loops=n_loops)
+                try:
+                    t0 = time.time()
+                    opt_instance = SMACOptimizer(dataset=dataset,
+                                                metric=MetricCollection.SILHOUETTE, n_loops=N_LOOPS)
 
-                opt_instance.optimize()
-                running_time = round(time.time() - t0, 3)
+                    opt_instance.optimize()
+                    running_time = round(time.time() - t0, 3)
+                except:
+                    continue
             
                 opt_result = opt_instance.get_best_configuration()
                 labels = ClusteringAlgorithms.run_algorithm(algorithm_name=opt_result['algorithm'], data_without_labels=dataset, k=opt_result['k']).labels

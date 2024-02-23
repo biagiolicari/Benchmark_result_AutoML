@@ -33,16 +33,28 @@ np.random.seed(9)
 from pathlib import Path
 import os
 
+N_EXECUTIONS = 5
+N_WARMSTART = 10 # Number of warmstart configurations (has to be smaller than n_loops)
+N_LOOPS = 100 # Number of optimizer loops. This is n_loops = n_warmstarts + x
+LIMIT_CS = True # Reduces the search space to suitable algorithms, dependening on warmstart configurations
+TIME_LIMIT = 18000 # Time limit (s) of overall optimization --> Aborts earlier if n_loops not finished but time_limit reached
+CVI = "predict" #predict a cvi based on our meta-knowledge
+
+MF_INDEX_TO_USE = 5 # stats + general + theory
+
+# Define the relative path to MetaKnowledgeRepository from the script directory
+RELATIVE_PATH_MKR = "src/MetaKnowledgeRepository/"
+# Define the relative path to related work from the script directory
+RELATIVE_PATH_RW = "src/Experiments/RelatedWork/related_work"
+
 # Get the directory of the current script
 script_directory = Path(__file__).resolve().parent
-# Define the relative path to MetaKnowledgeRepository from the script directory
-relative_path_mkr = "src/MetaKnowledgeRepository/"
-# Set the mkr_path using the relative path
-mkr_path = script_directory / relative_path_mkr
-mf_set = MetaFeatureExtractor.meta_feature_sets[5]
 
-relative_path_rw = "src/Experiments/RelatedWork/related_work"
-related_work_path = script_directory / relative_path_rw
+# Set the mkr_path using the relative path
+mkr_path = script_directory / RELATIVE_PATH_MKR
+mf_set = MetaFeatureExtractor.meta_feature_sets[MF_INDEX_TO_USE]
+
+related_work_path = script_directory / RELATIVE_PATH_RW
 
 
 def prepare_dataset(relative_path:Path):
@@ -60,13 +72,6 @@ def prepare_dataset(relative_path:Path):
 
 
 def run_ml2dac_experiments():
-    n_executions = 5
-    n_warmstarts = 10 # Number of warmstart configurations (has to be smaller than n_loops)
-    n_loops = 100 # Number of optimizer loops. This is n_loops = n_warmstarts + x
-    limit_cs = True # Reduces the search space to suitable algorithms, dependening on warmstart configurations
-    time_limit = 18000 # Time limit of overall optimization --> Aborts earlier if n_loops not finished but time_limit reached
-    cvi = "predict" #predict a cvi based on our meta-knowledge
-
     # Define the relative path to the data folder
     relative_path_to_data = "../datasets"
     # Set the path to reach the data folder
@@ -88,7 +93,7 @@ def run_ml2dac_experiments():
     else:
         print(f"CSV file '{file_path}' already exists.")
 
-    for i in range(n_executions + 1):
+    for i in range(N_EXECUTIONS + 1):
         for dataset, dataset_name, dataset_labels, in zip(datasets_to_use, dataset_names_to_use, true_labels_to_use):
                 result = pd.DataFrame(columns=col_names_df)  
                 run = dict()
@@ -99,11 +104,11 @@ def run_ml2dac_experiments():
 
                 ML2DAC = ApplicationPhase(mkr_path=mkr_path, mf_set=mf_set)
                 optimizer_result, additional_info = ML2DAC.optimize_with_meta_learning(dataset,
-                                                                                        n_optimizer_loops=n_loops, 
-                                                                                        cvi=cvi, time_limit=time_limit,
-                                                                                        limit_cs=limit_cs,
+                                                                                        n_optimizer_loops=N_LOOPS, 
+                                                                                        cvi=CVI, time_limit=TIME_LIMIT,
+                                                                                        limit_cs=LIMIT_CS,
                                                                                         dataset_name=dataset_name,
-                                                                                        n_warmstarts=n_warmstarts)
+                                                                                        n_warmstarts=N_WARMSTART)
 
                     # get the end time
                     # get the execution time
