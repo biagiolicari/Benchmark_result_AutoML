@@ -1,4 +1,0 @@
-{"cpu_time": 0.0, "wallclock_time": 9.751319885253906e-05, "evaluations": 0, "cost": 2147483648.0, "incumbent": {"algorithm": "GMM", "n_clusters": 37}, "budget": 0, "origin": "Initial design"}
-{"cpu_time": 1.6016466617584229, "wallclock_time": 1.6046051979064941, "evaluations": 1, "cost": -0.0312, "incumbent": {"algorithm": "GMM", "n_clusters": 37}, "budget": 0, "origin": "Initial design"}
-{"cpu_time": 9.373442649841309, "wallclock_time": 9.41269588470459, "evaluations": 6, "cost": -0.1481, "incumbent": {"algorithm": "GMM", "n_clusters": 56}, "budget": 0, "origin": "Initial design"}
-{"cpu_time": 9.624893426895142, "wallclock_time": 9.677613496780396, "evaluations": 7, "cost": -0.2355, "incumbent": {"algorithm": "GMM", "n_clusters": 2}, "budget": 0, "origin": null}

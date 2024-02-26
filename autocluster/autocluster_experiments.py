@@ -35,20 +35,66 @@ script_directory = Path(__file__).resolve().parent
 # Define the relative path to the data folder
 RELATIVE_PATH_TO_DATASETS = "../datasets"
 
-N_LOOPS = 100
+N_LOOPS = 100 # Number of optimizer loops
 
-def prepare_dataset(path:Path):
-    dataset_dir = [f for f in path.iterdir()]
+#Column of interest in DF
+COL_NAMES_DATAFRAME = ['dataset','framework','dbs','sil','ari','running_time_min', 'optimal_cfg']
+
+seed = [27, 1234, 99, 10, 1]
+
+
+def prepare_dataset(relative_path: Path):
+    """
+    Read CSV files from a given directory and prepare datasets.
+
+    Args:
+    - relative_path (Path): The relative path to the directory containing CSV files.
+
+    Returns:
+    - datasets_to_use: List of datasets.
+    - true_labels_to_use: List of true labels for each dataset.
+    - dataset_names_to_use: List of dataset names.
+    """
+
+    if not relative_path.is_dir():
+        raise ValueError("Provided path is not a directory.")
+
+    dataset_files = list(relative_path.glob("*.csv"))
+    if not dataset_files:
+        raise ValueError("No CSV files found in the directory.")
+       
     datasets_to_use = []
     true_labels_to_use = []
     dataset_names_to_use = []
-    for idx, f in enumerate(dataset_dir):
-        filename = f.name.split('.csv')[0]
-        data = pd.read_csv(f'{f}')
+
+    for file in dataset_files:
+        filename = file.stem
+        data = pd.read_csv(file)
         datasets_to_use.append(data.iloc[:, :-1].copy())
         true_labels_to_use.append(data.iloc[:, -1].copy())
         dataset_names_to_use.append(filename)
+
     return datasets_to_use, true_labels_to_use, dataset_names_to_use
+
+def create_dataframe_if_not_exists(file_path: str, columns: list) -> pd.DataFrame:
+    """
+    Create a DataFrame with specified columns if the file does not exist.
+
+    Args:
+    - file_path (str): The path to the CSV file.
+    - columns (list): List of column names for the DataFrame.
+
+    Returns:
+    - DataFrame: The initial DataFrame.
+    """
+    if not os.path.exists(file_path):
+        initial_df = pd.DataFrame(columns=columns)
+        initial_df.to_csv(file_path, index=False)
+        print(f"CSV file '{file_path}' created with columns: {columns}")
+        return initial_df
+    else:
+        print(f"CSV file '{file_path}' already exists.")
+        return pd.read_csv(file_path)
 
 @timeout(5 * 60 * 60)  # Timeout set to 5 hours (in seconds)
 def fit_and_predict(cluster, dataset, dataset_name, fit_params):
@@ -60,29 +106,20 @@ def fit_and_predict(cluster, dataset, dataset_name, fit_params):
     elapsed_time = et - st
     return res, predictions, elapsed_time
 
+
 def run_autocluster():
     # Set the path to reach the data folder
     data_path = script_directory / RELATIVE_PATH_TO_DATASETS
     datasets_to_use, true_labels_to_use, dataset_names_to_use = prepare_dataset(data_path)
 
-    col_names_df = ['dataset','framework','dbs','sil','ari','running_time_min', 'optimal_cfg']
-    seed = [27, 1234, 99, 10, 1]
-
     file_path="autocluster_experiments.csv"
     # Check if the file exists
-    if not os.path.exists(file_path):
-    # Create a DataFrame with the specified columns
-        initial_df = pd.DataFrame(columns=col_names_df)
-    # Write the DataFrame to a CSV file
-        initial_df.to_csv(file_path, index=False)
-        print(f"CSV file '{file_path}' created with columns: {col_names_df}")
-    else:
-        print(f"CSV file '{file_path}' already exists.")
+    create_dataframe_if_not_exists(file_path=file_path, columns=COL_NAMES_DATAFRAME)
     
     for s in seed:
         for dataset, dataset_name, true_labels in zip(datasets_to_use, dataset_names_to_use, true_labels_to_use):
                 print(dataset_name)     
-                result = pd.DataFrame(columns=col_names_df)
+                result = pd.DataFrame(columns=COL_NAMES_DATAFRAME)
                 run = dict()
                 run['dataset'] = dataset_name
                 run['framework'] = 'Autocluster'

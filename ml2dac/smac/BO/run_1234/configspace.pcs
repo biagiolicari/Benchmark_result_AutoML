@@ -1,4 +1,8 @@
-algorithm categorical {birch, MBKMeans, KMeans} [birch]
+algorithm categorical {KMeans, dbscan} [KMeans]
+Q0_eps real [0.1, 1.0] [0.55]
+min_samples integer [2, 200] [101]
 n_clusters integer [2, 200] [2]
 
-n_clusters | algorithm in {birch, MBKMeans, KMeans}
+eps | algorithm in {dbscan}
+min_samples | algorithm in {dbscan}
+n_clusters | algorithm in {KMeans}

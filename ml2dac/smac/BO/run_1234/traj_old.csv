@@ -1,3 +1,8 @@
 "CPU Time Used","Estimated Training Performance","Wallclock Time","Incumbent ID","Automatic Configurator (CPU) Time","Configuration..."
-0.000000, 2147483648.000000, 0.000084, 1, 0.000084, algorithm=''birch'',n_clusters='50'
-0.056547, 1.000000, 0.058365, 1, 0.001819, algorithm=''birch'',n_clusters='50'
+0.000000, 2147483648.000000, 0.000078, 1, 0.000078, algorithm=''KMeans'',n_clusters='62'
+0.145918, 1.044700, 0.147462, 1, 0.001545, algorithm=''KMeans'',n_clusters='62'
+0.286712, 0.979600, 0.290939, 2, 0.004228, algorithm=''KMeans'',n_clusters='71'
+0.362884, 0.880300, 0.370031, 3, 0.007147, algorithm=''KMeans'',n_clusters='2'
+1.761751, 0.830600, 3.413611, 4, 1.651860, algorithm=''KMeans'',n_clusters='192'
+2.172952, 0.826000, 4.300040, 5, 2.127088, algorithm=''KMeans'',n_clusters='194'
+2.933416, 0.822800, 5.969050, 6, 3.035634, algorithm=''KMeans'',n_clusters='5'
