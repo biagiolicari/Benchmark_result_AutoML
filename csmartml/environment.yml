@@ -3,31 +3,31 @@ channels:
   - conda-forge
   - defaults
 dependencies:
-  - _libgcc_mutex=0.1=conda_forge
-  - _openmp_mutex=4.5=2_gnu
-  - brotli-python=1.0.9=py37hd23a5d3_7
-  - ca-certificates=2023.7.22=hbcca054_0
-  - charset-normalizer=3.2.0=pyhd8ed1ab_0
-  - ld_impl_linux-64=2.40=h41732ed_0
-  - libffi=3.4.2=h7f98852_5
-  - libgcc-ng=13.1.0=he5830b7_0
-  - libgomp=13.1.0=he5830b7_0
-  - libnsl=2.0.0=h7f98852_0
-  - libsqlite=3.42.0=h2797004_0
-  - libstdcxx-ng=13.1.0=hfd8a6a1_0
-  - libzlib=1.2.13=hd590300_5
-  - ncurses=6.4=hcb278e6_0
-  - openssl=3.1.2=hd590300_0
-  - pip=23.2.1=pyhd8ed1ab_0
-  - pysocks=1.7.1=py37h89c1867_5
-  - python=3.7.12=hf930737_100_cpython
-  - python_abi=3.7=3_cp37m
-  - readline=8.2=h8228510_1
-  - setuptools=68.1.2=pyhd8ed1ab_0
-  - sqlite=3.42.0=h2c6b66d_0
-  - tk=8.6.12=h27826a3_0
-  - wheel=0.41.2=pyhd8ed1ab_0
-  - xz=5.2.6=h166bdaf_0
+  - _libgcc_mutex=0.1
+  - _openmp_mutex=4.5
+  - brotli-python=1.0.9
+  - ca-certificates=2023.7.22
+  - charset-normalizer=3.2.0
+  - ld_impl_linux-64=2.40
+  - libffi=3.4.2
+  - libgcc-ng=13.1.0
+  - libgomp=13.1.0
+  - libnsl=2.0.0
+  - libsqlite=3.42.0
+  - libstdcxx-ng=13.1.0
+  - libzlib=1.2.13
+  - ncurses=6.4
+  - openssl=3.1.2
+  - pip=23.2.1
+  - pysocks=1.7.1
+  - python=3.7.12
+  - python_abi=3.7
+  - readline=8.2
+  - setuptools=68.1.2
+  - sqlite=3.42.0
+  - tk=8.6.12
+  - wheel=0.41.2
+  - xz=5.2.6
   - pip:
       - anyio==3.7.1
       - argon2-cffi==23.1.0
